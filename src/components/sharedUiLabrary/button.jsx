@@ -2,12 +2,12 @@ import { cva } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex  whitespace-nowrap items-center p-2 justify-center rounded-lg font-medium transition disabled:opacity-60 disabled:pointer-events-none",
+  "inline-flex cursor-pointer disabled:cursor-not-allowed  whitespace-nowrap items-center p-2 justify-center rounded-lg font-medium transition disabled:opacity-60 disabled:pointer-events-none",
   {
     variants: {
       variant: {
         default: "bg-primary text-white hover:bg-primary/90",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
+        secondary: "bg-secondary border-[#154275]/20 text-[#154275] text-secondary-foreground hover:bg-secondary/90",
         outline: "border bg-background hover:bg-accent",
         ghost: "hover:bg-accent",
         destructive: "bg-red-600 text-white hover:bg-red-700",

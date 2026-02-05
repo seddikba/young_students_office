@@ -1,9 +1,9 @@
 import React from 'react'
 import {Header} from '../components'
 
-function MainLayouts({children}) {
+function MainLayouts({children, ...props}) {
   return (
-    <main>
+    <main {...props}>
         <Header />
         <div>
             {children}
