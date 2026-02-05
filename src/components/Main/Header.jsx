@@ -70,7 +70,7 @@ const Header = () => {
             className="p-2 rounded-xl bg-gray-50 text-gray-600"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={23} />}
           </button>
         </div>
       </nav>
